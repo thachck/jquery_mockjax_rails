@@ -1,5 +1,7 @@
 # jquery_mockjax_rails
 
+[![Build Status](https://travis-ci.org/chautoni/jquery_mockjax_rails.png?branch=master)](https://travis-ci.org/chautoni/jquery_mockjax_rails)
+
 This gem provides:
 
   * [jQuery Mockjax 1.5.2](https://github.com/appendto/jquery-mockjax)
