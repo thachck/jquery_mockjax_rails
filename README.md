@@ -5,10 +5,14 @@
 This gem provides:
 
   * [jQuery Mockjax 1.5.2](https://github.com/appendto/jquery-mockjax)
-  * ajax mocking helper in your Rspec integration tests
+  * Ajax mocking helper in your Rspec integration tests
 
 ## Requirements
-This gem requires Rails 3.1 or greater, with assets pipeline enabled and capybara integration tests support.
+
+  * Rails 3.1 or later
+  * Assets pipeline enabled
+  * jQuery
+  * Rspec/Capybara integration tests
 
 ## Installation
 
@@ -27,15 +31,18 @@ And run `bundle install`
 Stub the ajax request in a `before` block
 
 ```ruby
-before do
-  stub_ajax url: '/api/path', responseText: { message: 'message' }
+describe 'My integration spec', js: true do
+
+  before do
+    stub_ajax url: '/api/path', responseText: { message: 'message' }
+  end
 end
 ```
 
 Once the browser has been lauched, open the JS console and test the mocked response
 
-```javascript
-$.getJSON('/api/path', function(data) { console.log(data.message) }); #=> message
+```coffeescript
+$.getJSON('/api/path', function(data) { console.log(data.message) }); # => message
 ```
 
 ## Acknowledgements
@@ -46,3 +53,10 @@ Most of the core code pieces have been emerged from [ejholmes](https://github.co
 ## Contributing
 
 Pull requests are more than welcome. Before submitting pull requests, please make sure your changes are covered with tests.
+
+For testing purpose, please create a dummy `test.sqlite3` when running tests for the first time
+
+```sh
+mkdir spec/dummy/db
+touch spec/dummy/db/test.sqlite3
+```
