@@ -19,8 +19,8 @@ Gem::Specification.new do |s|
   s.add_dependency 'rails', '~> 3.2.12'
   s.add_dependency 'rspec-rails', '~> 2.12.0'
   s.add_dependency 'capybara', '~> 2.0.0'
-  s.add_development_dependency 'selenium-webdriver', '~> 2.33.0'
   s.add_development_dependency 'sqlite3'
   s.add_development_dependency 'debugger'
   s.add_development_dependency 'spring'
+  s.add_development_dependency 'poltergeist'
 end
