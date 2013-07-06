@@ -16,8 +16,8 @@ Gem::Specification.new do |s|
   s.files = `git ls-files`.split("\n")
   s.require_path = 'lib'
 
-  s.add_dependency 'rails', '~> 3.2.12'
-  s.add_dependency 'rspec-rails', '~> 2.13.0'
+  s.add_dependency 'rails', '~> 3.2.0'
+  s.add_dependency 'rspec-rails', '~> 2.0.0'
   s.add_dependency 'capybara', '~> 2.0.0'
   s.add_development_dependency 'sqlite3'
   s.add_development_dependency 'debugger'
