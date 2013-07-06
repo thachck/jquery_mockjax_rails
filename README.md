@@ -53,10 +53,3 @@ Most of the core code pieces have been emerged from [ejholmes](https://github.co
 ## Contributing
 
 Pull requests are more than welcome. Before submitting pull requests, please make sure your changes are covered with tests.
-
-For testing purpose, please create a dummy `test.sqlite3` when running tests for the first time
-
-```sh
-mkdir spec/dummy/db
-touch spec/dummy/db/test.sqlite3
-```
