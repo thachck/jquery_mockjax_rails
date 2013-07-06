@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    jquery_mockjax_rails (0.0.2)
+    jquery_mockjax_rails (0.0.3)
       capybara (~> 2.0.0)
       rails (~> 3.2.0)
       rspec-rails (~> 2.10.0)
